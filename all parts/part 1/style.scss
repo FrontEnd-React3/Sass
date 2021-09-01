@@ -1,0 +1,33 @@
+$primaryBtnColor: rgb(197, 180, 49, 0.9);
+button {
+  background: lime;
+}
+@import "./variables";
+  // not so sure about this move, variables yes but centerer...
+
+
+.brownSquare {
+  background: $primaryBrown;
+  width: 25vw;
+  height: 25vw;
+}
+header {
+  background: lightblue;
+  display: flex;
+  // background: $primaryBtnColor;
+
+  button {
+    background: $primaryBtnColor;
+    transition: 0.5s all ease;
+    // try to use transition as much as possible,
+    // do not write it in the hover!!
+
+    &:hover {
+      background: gold;
+      // do not repeat it all in hover
+    }
+  }
+}
+// if button would be outside header it would be armygreen
+
+

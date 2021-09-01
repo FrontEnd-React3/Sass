@@ -1,0 +1,30 @@
+$primaryBtnColor: rgb(197, 180, 49, 0.9);
+
+@mixin flexCenter($direction, $rand) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+  border: $rand;
+}
+// JS in CSS that does the job of centerer
+// remember stylesheets in xpress or pagemaker
+
+@import "./variables";
+// not so sure about this move, variables yes but centerer...
+
+.brownSquare {
+  @include flexCenter(column, 15px solid brown);
+  background: $primaryBrown;
+  width: 25vw;
+  height: 25vw;
+}
+
+#up {
+  color: blue;
+  @extend .toptext;
+}
+
+#down {
+  color: darkgreen;
+}

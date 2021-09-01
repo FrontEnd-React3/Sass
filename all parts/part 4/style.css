@@ -1,0 +1,24 @@
+.toptext, #up {
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #ce5937;
+}
+
+.brownSquare {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 15px solid brown;
+  background: rgba(197, 79, 49, 0.438);
+  width: 25vw;
+  height: 25vw;
+}
+
+#up {
+  color: blue;
+}
+
+#down {
+  color: darkgreen;
+}/*# sourceMappingURL=style.css.map */
